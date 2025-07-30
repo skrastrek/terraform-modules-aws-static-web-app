@@ -2,6 +2,10 @@ output "domain_name" {
   value = aws_route53_record.alias_cloudfront.name
 }
 
+output "s3_bucket_id" {
+  value = aws_s3_bucket.this.id
+}
+
 output "s3_bucket_read_iam_policy_arn" {
   value = aws_iam_policy.s3_bucket_read.arn
 }
